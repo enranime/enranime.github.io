@@ -49,6 +49,14 @@ body{
     margin-top: 256px;
 }
 
+.p-activity img {
+    width: 150px;
+    -webkit-filter: drop-shadow(5px 5px 5px 
+    #06c258 );
+    filter: drop-shadow(5px 5px 5px 
+    #06c258 );
+  }
+
 
 /* activity-history */
 
@@ -64,3 +72,10 @@ body{
 
 }
 
+.img-history{
+    width: 100%;
+    -webkit-filter: drop-shadow(5px 5px 5px 
+    #06c258 );
+    filter: drop-shadow(5px 5px 5px 
+    #06c258 );
+}

@@ -4,7 +4,12 @@ body{
 
     font-family: 'Asap', sans-serif; 
     color:white ;
-    background-color: #444444;
+    background: -webkit-linear-gradient(left, rgb(20, 17, 25) 0%, rgb(69, 61, 52) 80%, rgb(57, 50, 45) 100%);
+  background: -o-linear-gradient(left, rgb(20, 17, 25) 0%, rgb(69, 61, 52) 80%, rgb(57, 50, 45) 100%);
+  background: -ms-linear-gradient(left, rgb(20, 17, 25) 0%, rgb(69, 61, 52) 80%, rgb(57, 50, 45) 100%);
+  background: -moz-linear-gradient(left, rgb(20, 17, 25) 0%, rgb(69, 61, 52) 80%, rgb(57, 50, 45) 100%);
+  background: linear-gradient(to right, rgb(20, 17, 25) 0%, rgb(69, 61, 52) 80%, rgb(57, 50, 45) 100%);
+
     padding-left:32px;
     padding-right:32px;
 
@@ -24,6 +29,7 @@ body{
 }
 
 
+
 .p-activity > h2{
     padding: 12px;
     font-size: 22px;
@@ -34,15 +40,7 @@ body{
 
 /* navbar */
 
-#navbarNavAltMarkup a{
 
-    font-size: 16px;
-    align-self: center;
-    margin-left: 36px;
-   
-    
-    
-}
 .navbar-light .navbar-brand{
     color:white;
 }
@@ -53,13 +51,36 @@ body{
 
 .navbar-light .navbar-brand:hover .Exer{
     color:#06c258;
+    
 
+}
+
+
+
+.p-navtext{
+    font-size: 16px;
+    align-self: center;
+    margin-left: 36px;
+}
+
+.p-navtext:hover{
+    transform: scale(1.2);
+    transition:0.5s;
+    
 }
 
 
 /* form */
 .add-activity-btn >button{
-    font-size: 12px;
+    font-size: 16px;
+    padding:32px;
+}
+
+.btn-dark:hover{
+    transform:translate(0,3px) ;
+    transition: 0.2s ease;
+
+    
 }
 
 .p-footer{
@@ -68,18 +89,54 @@ body{
 
 .activity-img {
     width: 150px;
+    
+    /* -webkit-filter: drop-shadow(5px 5px 5px 
+    #06c258 );
+    filter: drop-shadow(5px 5px 5px 
+    #06c258 ); */
+  }
+
+  .activity-img:hover {
+    max-width: 150px;
+    transition: 0.5s;
+    transform: translate(0,-10px);
     -webkit-filter: drop-shadow(5px 5px 5px 
     #06c258 );
     filter: drop-shadow(5px 5px 5px 
     #06c258 );
+    
   }
 
 .img-form{
-
-    border: 2px solid #06c258;
+    border: 12px solid white;
     box-shadow: 10px 20px 25px 12px black;
     padding: 24px;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); 
+    transform:rotate(12deg);
+
 }
+
+
+
+.img-form:hover{
+    transform:rotate(10deg);
+    transition: 0.3s ;
+ 
+}
+
+.form-control:focus {
+    border-color: #06c258;
+    box-shadow: inset 0 1px 1px #06c258, 0 0 8px #06c258;
+  }
+
+
+  .form-select:focus {
+    border-color: #06c258;
+    box-shadow: inset 0 1px 1px #06c258, 0 0 8px #06c258;
+  }
+
+
 
 /* activity-history */
 
@@ -122,3 +179,18 @@ body{
     font-size: calc(12px +1vw);
    
 }
+
+
+/* animatation */
+.animated_test1{
+transition-duration: 1.3s ;
+transition-timing-function: ease;
+
+}
+
+.animated_test2{
+    transition-duration: 0.9s ;
+    transition-timing-function: ease;
+    
+}
+

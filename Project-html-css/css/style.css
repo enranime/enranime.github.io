@@ -1,0 +1,71 @@
+/* common */
+
+body{
+
+    font-family: 'Asap', sans-serif; 
+    color:white ;
+    background-color: #444444;
+
+}
+
+*{
+    border: 1px solid green;
+}
+
+
+/* index */
+
+
+.p-activity > h2{
+    padding: 12px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+/* navbar */
+
+.navbar a{
+
+    font-size: 16px;
+    align-self: center;
+    
+    
+}
+.navbar-light .navbar-brand{
+    color:white;
+}
+
+.Exer{
+    color:#f4eb49;
+}
+
+/* form */
+.add-activity-btn >button{
+    font-size: 12px;
+}
+
+.p-footer{
+    margin-top: 256px;
+}
+
+
+/* activity-history */
+
+.subheader{
+    display:flex;
+    justify-content: space-between;
+    padding:24px 12px;
+    margin-top:12px;
+}
+
+.subheader > span,a{
+    font-size: 24px;
+
+}
+
+
+
+.running-1- {
+	
+}

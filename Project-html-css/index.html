@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- font awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <script src="https://kit.fontawesome.com/5606aea9e2.js" crossorigin="anonymous"></script>
 
     <!-- Bootstrap CSS -->
@@ -43,20 +43,20 @@
     <!-- navbar section -->
 
     <section id="p-navbar">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid fw-bold">
-                <a class="navbar-brand fs-1" href="./index.html"><span class="Exer">Exer</span>Notion</a>
+        <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+            <div class="container-fluid pe-1">
+                <a class="navbar-brand p-logo fw-bold" href="./index.html"><span class="Exer">Exer</span>Notion</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link text-light" aria-current="page" href="#">Add your Activity</a>
-                        <a class="nav-link text-light" href="./activity-history.html">Activity History</a>
-                        <a class="nav-link text-light" href="#">Subscribe</a>
-                        <a class="nav-link text-light" href="#">Sign up</a>
+                    <div class="navbar-nav pe-3">
+                        <a class="nav-link text-light fw-bold" href="#">Add your Activity</a>
+                        <a class="nav-link text-light fw-bold" href="./activity-history.html">Activity History</a>
+                        <a class="nav-link text-light fw-bold" href="#">Subscribe</a>
+                        <a class="nav-link text-light fw-bold" href="#">Sign up</a>
                     </div>
                 </div>
             </div>
@@ -71,44 +71,44 @@
         <h2>Add your Activity</h2>
         <!-- icon -->
         <div class="container-fluid">
-            <div class="row row-cols-6">
-                <div class="col d-flex justify-content-center"><img src="./image/icon-sport/running (1).png"
+            <div class="row row-cols-6 px-3 py-3">
+                <div class="col d-flex justify-content-center"><img class ="activity-img" src="./image/icon-sport/running (1).png"
                         alt="running"></div>
-                <div class="col d-flex justify-content-center"><img src="./image/icon-sport/running (1).png"
+                <div class="col d-flex justify-content-center"><img class ="activity-img" src="./image/icon-sport/swimming (1).png"
                         alt="running"></div>
-                <div class="col d-flex justify-content-center"><img src="./image/icon-sport/running (1).png"
+                <div class="col d-flex justify-content-center"><img class ="activity-img" src="./image/icon-sport/basketball (1).png"
                         alt="running"></div>
-                <div class="col d-flex justify-content-center"><img src="./image/icon-sport/running (1).png"
+                <div class="col d-flex justify-content-center"><img class ="activity-img" src="./image/icon-sport/bike (1).png"
                         alt="running"> </div>
-                <div class="col d-flex justify-content-center"><img src="./image/icon-sport/running (1).png"
+                <div class="col d-flex justify-content-center"><img class ="activity-img" src="./image/icon-sport/dumbbell (1).png"
                         alt="running"> </div>
-                <div class="col d-flex justify-content-center"><img src="./image/icon-sport/running (1).png"
+                <div class="col d-flex justify-content-center"><img class ="activity-img" src="./image/icon-sport/ping-pong (1).png"
                         alt="running"> </div>
-                <div class="col d-flex justify-content-center"><img src="./image/icon-sport/running (1).png"
+                <div class="col d-flex justify-content-center"><img class ="activity-img" src="./image/icon-sport/boxing-gloves (1).png"
                         alt="running"> </div>
-                <div class="col d-flex justify-content-center"><img src="./image/icon-sport/running (1).png"
+                <div class="col d-flex justify-content-center"><img class ="activity-img" src="./image/icon-sport/tennis (1).png"
                         alt="running"> </div>
-                <div class="col d-flex justify-content-center"><img src="./image/icon-sport/running (1).png"
+                <div class="col d-flex justify-content-center"><img class ="activity-img" src="./image/icon-sport/yoga (1).png"
                         alt="running"> </div>
-                <div class="col d-flex justify-content-center"><img src="./image/icon-sport/running (1).png"
+                <div class="col d-flex justify-content-center"><img class ="activity-img" src="./image/icon-sport/soccer-ball (1).png"
                         alt="running"> </div>
-                <div class="col d-flex justify-content-center"><img src="./image/icon-sport/running (1).png"
+                <div class="col d-flex justify-content-center"><img class ="activity-img" src="./image/icon-sport/golf (1).png"
                         alt="running"> </div>
-                <div class="col d-flex justify-content-center"><img src="./image/icon-sport/running (1).png"
+                <div class="col d-flex justify-content-center"><img class ="activity-img" src="./image/icon-sport/other.png"
                         alt="running"> </div>
             </div>
         </div>
         <div class="container my-5">
             <div class="row">
-                <div class="col-md-6 py-3">
+                <div class="col-md-6 py-3 pe-5">
                     <form>
                         <div class="mb-4">
-                            <label for="" class="form-label mb-3 fw-bold">Activity Name</label>
-                            <input type="text" class="form-control" id="">
+                            <label for="form-activity" class="form-label mb-3 fw-bold ">Activity Name</label>
+                            <input type="text" class="form-control" id="form-activity" placeholder="Your Activity Name">
                         </div>
                         <div class="mb-4">
-                            <label for="" class="form-label mb-3 fw-bold">Date</label>
-                            <input type="date" class="form-control" id="">
+                            <label for="form-date" class="form-label mb-3 fw-bold">Date</label>
+                            <input type="date" class="form-control" id="form-date">
                         </div>
                         <div class="mb-4">
                             <label for="" class="form-label mb-3 fw-bold">Activity Type</label>
@@ -133,33 +133,33 @@
 
                         </div>
                         <div class="mb-4">
-                            <label for="" class="form-label mb-3 fw-bold">Activity Duration</label>
-                            <input type="number" class="form-control" id="">
+                            <label for="form-duration" class="form-label mb-3 fw-bold">Activity Duration</label>
+                            <input type="number" class="form-control" id="form-duration" placeholder="Hours">
                         </div>
                         <div class="mt-5 mb-4">
-                            <label for="" class="form-label mb-3 fw-bold">Descripe this journal</label>
-                            <textarea maxlength="120" type="text" class="form-control" id="" rows="3"></textarea>
+                            <label for="form-desc" class="form-label mb-3 fw-bold">Describe this journal</label>
+                            <textarea maxlength="120" type="text" class="form-control" id="form-desc" rows="3" placeholder="Max 120 Characters"></textarea>
                         </div>
                         <div class="add-activity-btn">
                             <button type="submit" class="btn btn-dark fw-bold py-2">ADD ACTIVITY</button>
                         </div>
                     </form>
                 </div>
-                <div class="col-md-6 d-flex align-items-center">
-                    <img src="./image/icon-sport/running (1).png" width="100%" class="img-fluid" alt="placeholder">
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                    <img  class ="img-form" src="./image/icon-sport/running (1).png" width="520px" class="img-fluid" alt="placeholder">
                 </div>
             </div>
         </div>
         <!-- newsletter section -->
 
+    </section>
 
 
 
-
-
+    <section id="footer-section">
         <!-- footer section -->
-        <div class="container p-footer">
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="container-fluid p-footer">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 pe-3 border-top">
                 <div class="col-md-4 d-flex align-items-center">
                     <span class="text-light">&copy;Copyright 2019</span>
                 </div>

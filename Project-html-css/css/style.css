@@ -5,30 +5,41 @@ body{
     font-family: 'Asap', sans-serif; 
     color:white ;
     background-color: #444444;
+    padding-left:32px;
+    padding-right:32px;
 
 }
 
-*{
-    border: 1px solid green;
-}
+/* *{
+    border : 1px solid green;
+}  */
 
 
 /* index */
+
+.p-logo{
+    font-size: 42px;
+    box-sizing: border-box;
+    
+}
 
 
 .p-activity > h2{
     padding: 12px;
     font-size: 22px;
     font-weight: bold;
+    margin-top:12px;
 }
 
 
 /* navbar */
 
-.navbar a{
+#navbarNavAltMarkup a{
 
     font-size: 16px;
     align-self: center;
+    margin-left: 36px;
+   
     
     
 }
@@ -40,6 +51,12 @@ body{
     color:#f4eb49;
 }
 
+.navbar-light .navbar-brand:hover .Exer{
+    color:#06c258;
+
+}
+
+
 /* form */
 .add-activity-btn >button{
     font-size: 12px;
@@ -49,7 +66,7 @@ body{
     margin-top: 256px;
 }
 
-.p-activity img {
+.activity-img {
     width: 150px;
     -webkit-filter: drop-shadow(5px 5px 5px 
     #06c258 );
@@ -57,6 +74,12 @@ body{
     #06c258 );
   }
 
+.img-form{
+
+    border: 2px solid #06c258;
+    box-shadow: 10px 20px 25px 12px black;
+    padding: 24px;
+}
 
 /* activity-history */
 
@@ -69,7 +92,12 @@ body{
 
 .subheader > span,a{
     font-size: 24px;
+    color:white;
 
+}
+
+.subheader  a:hover{
+    color:black;
 }
 
 .img-history{
@@ -78,4 +106,19 @@ body{
     #06c258 );
     filter: drop-shadow(5px 5px 5px 
     #06c258 );
+    padding:12px ;
+    
+   
+}
+
+.card-activity .card-body{
+    min-height: 250px;
+    height: 100%;
+    padding: 32px 12px;
+    justify-content: space-between;
+}
+
+.card-body h5{
+    font-size: calc(12px +1vw);
+   
 }

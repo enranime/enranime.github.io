@@ -1,0 +1,23 @@
+/* common */
+
+body{  
+    background-color: aliceblue;
+    font-size: 32px;
+}
+
+.myname{
+  border:1px solid;
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+}
+
+.mybutton{
+    width: 240px;
+    align-self: center;
+    margin-top:10px;
+   text-align: center;
+   font-size: 16px;
+   padding: 10px 32px;;
+   cursor: pointer;
+}

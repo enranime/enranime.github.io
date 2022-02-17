@@ -11,6 +11,6 @@ function askMyName() {
  
  function helloWorld() {
  const h1message = document.getElementById("h1").innerHTML;// ใช้คำสั่ง document.getElementById เหมือนใน askMyName เพื่อเอาข้อความใน h1 มาใส่
-    alert(h1message + 'ไม่ว่าพายุจะแรงแค่ไหน สุดท้ายก็ต้องสงบ ปัญหาที่เราประสบ ไม่นานก็จบและผ่านไป')
+    alert(h1message + ' ไม่ว่าพายุจะแรงแค่ไหน สุดท้ายก็ต้องสงบ ปัญหาที่เราประสบ ไม่นานก็จบและผ่านไป')
  }
 

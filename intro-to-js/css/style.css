@@ -16,8 +16,8 @@ body{
     width: 240px;
     align-self: center;
     margin-top:10px;
-   text-align: center;
-   font-size: 16px;
-   padding: 10px 32px;;
-   cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 32px;;
+    cursor: pointer;
 }

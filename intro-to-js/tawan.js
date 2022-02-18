@@ -14,3 +14,19 @@ function askMyName() {
     alert(h1message + ' ไม่ว่าพายุจะแรงแค่ไหน สุดท้ายก็ต้องสงบ ปัญหาที่เราประสบ ไม่นานก็จบและผ่านไป')
  }
 
+
+ function calAge(){
+   const age = prompt("What Year You were Born", '1990');
+   const d = new Date();
+   let year = d.getFullYear();
+   alert(year - age )
+
+ }
+
+ function loadProfile(){
+   const name = "Tawan"
+   const province = "Bangkok"
+   document.getElementById("my-name").innerHTML = name;
+   document.getElementById("my-province").innerHTML = province;
+
+ }

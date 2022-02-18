@@ -21,3 +21,19 @@ body{
     padding: 10px 32px;;
     cursor: pointer;
 }
+
+.myprofile{
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.myprofile button{
+
+  width: 240px;
+    align-self: center;
+    margin-top:10px;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 32px;;
+    cursor: pointer;
+}

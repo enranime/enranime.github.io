@@ -1,3 +1,42 @@
+body {
+    background-color: #ffffff;
+    
+}
+
+/* header */
+header {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    text-align: center;
+    z-index: 10; 
+    display:flex;
+    justify-content: center;
+
+}
+
+/* nav */
+.nav-link {
+    color: gray;
+    font-size: 1.5rem;
+}
+
+.nav-link:hover{
+    color:black;
+}
+
+/* heading */
+.heading {
+    color:grey;
+    font-weight: 700;
+    font-size: 2.5em;
+    padding-bottom: 20px;
+}
+
+
+
+
 /* list */
 
 ul {
@@ -6,26 +45,96 @@ ul {
     padding: 0;
 }
 
+/* fa */
+.fa {
+    color:grey;
+}
+
+.fa:hover {
+    color:black;
+}
+
+/* for introduction section */
+.introduction {
+    min-height: 100vh;
+    max-height: 1080px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+}
+
+.introduction h1 {
+    color: grey;
+    font-weight: 900;
+    font-size: 5em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 0.9em;
+}
+
+.introduction h2 {
+    color: grey;
+    font-weight: 500;
+    font-size: 2.25em;
+    margin-bottom: 15px;
+}
+
+.social-links {
+    min-height: 60px;
+}
+
+.introduction .fa {
+    font-size:48px;
+    padding-top: 2rem;
+    margin:0 5px;
+}
+
+.introduction .fa:hover {
+    font-size: 64px;
+    transition-timing-function: ease;
+    transition: 0.5s;
+}
+
+/* for about section */
+.about {
+    background-color: #f7faff;
+}
+.about-block {
+    padding: 75px;
+    width: 900px;
+    margin-bottom: 2.5rem;
+}
+.about-block p {
+    color: grey;
+    font-size: 1.5rem;
+}
 /* for education section */
-.block {
-    border: solid;
+.education-block {
+    border: 1px solid darkgray;
     max-width: 700px;
     align-items: center;
     margin:30 auto 30 auto;
-    padding: 1rem;
+    padding:1rem 0rem;
+
 }
 
-.block > h3  {
+.education-block > h3  {
     width: 50%;
+    color: grey;
     text-align: start;
 }
 
-.block > span {
+.education-block > span {
     width: 50%;
+    color: grey;
     text-align: end;
 }
 
-.block > h4 {
+.education-block > h4 {
+    color: grey;
     text-align: start;
 }
 
@@ -63,13 +172,23 @@ ul {
     align-content: center;
 }
 
+.skill-block .fa {
+    font-size: 64px;
+}
+
 
 /* for footer section */
+footer{
+    background-color: #12130F;
+}
+
+
 .footer-block {
     width: 900px;
     display:flex;
     justify-content: space-between;
     margin:30 auto 30 auto;
+    color:#ffffff;
 
 }
 
@@ -81,4 +200,14 @@ ul {
 
 .footer-block li {
     padding-right: 10px;
+}
+
+footer .fa {
+    color:#ffffff;
+}
+
+footer .fa:hover {
+    color:#ffffff;
+    transform: translate(0px,-5px);
+    transition: 0.3s;
 }

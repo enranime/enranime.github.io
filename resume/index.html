@@ -19,7 +19,12 @@
 
   <!-- custom CSS -->
   <link rel="stylesheet" href="./css/main.css">
- 
+
+  <!-- swiper CSS-->
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+  />
 
 </head>
 
@@ -96,13 +101,12 @@
   <!-- End education -->
 
   <div id="projects">
-    <div class="container-fluid  text-center mb-5">
       <h2 class="heading">Projects</h2>
-      <div class="container">
-        <div class="row">
-          <div class="project">
-            <div>
-              <img src="./image/project-jamming.png" class="project-img  alt=" project-amming">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="project-img">
+              <img src="./image/project-jamming.png" class="project-img"  alt="project-jamming">
             </div>
             <div class="project-info">
               <h4>Project jamming from codeacademy using React component</h4>
@@ -110,9 +114,9 @@
                 here</a>
             </div>
           </div>
-          <div class="project">
+          <div class="swiper-slide">
             <div class="project-img">
-              <img src="./image/project-exernotion.png" class="project-img alt=" project-exernotion">
+              <img src="./image/project-exernotion.png" class="project-img" alt="project-exernotion">
             </div>
             <div class="project-info">
               <h4>In Developing Project Exercise Tracking Project from Generation Thailand Using html css javascript
@@ -121,33 +125,20 @@
             </div>
           </div>
         </div>
+        <div class="swiper-scrollbar"></div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
   </div>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script src="./index.js"> </script>
+
   <!-- End project -->
 
- 
-  <!-- Slider main container -->
-  <div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      ...
-    </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
 
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
-  </div>
-  
   
 
   <div id="skills" class="skills">

@@ -81,8 +81,8 @@
   <!-- End #about me -->
 
 
-  <div id="education">
-    <div class="container-fluid  text-center mb-5">
+  <div id="education" class="education">
+    <div class="container-fluid  text-center">
       <h2 class="heading">Education</h2>
       <div class="row education-block">
         <h3>Generation Thailand</h3>
@@ -101,35 +101,44 @@
   <!-- End education -->
 
   <div id="projects">
-      <h2 class="heading">Projects</h2>
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
+    <h2 class="heading">Projects</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="project-block">
             <div class="project-img">
-              <img src="./image/project-jamming.png" class="project-img"  alt="project-jamming">
+              <img src="./image/project-jamming.png" alt="project-jamming">
             </div>
             <div class="project-info">
-              <h4>Project jamming from codeacademy using React component</h4>
+              <h2 class="project-title">Jamming</h2>
+              <p>Project jamming from codeacademy using React component</p>
               <a href="https://github.com/enranime/enranime.github.io/tree/main/Project-React/exernotion">View it
                 here</a>
             </div>
           </div>
-          <div class="swiper-slide">
+        </div>
+
+        <div class="swiper-slide">
+          <div class="project-block">
             <div class="project-img">
-              <img src="./image/project-exernotion.png" class="project-img" alt="project-exernotion">
+              <img src="./image/project-exernotion.png" alt="project-exernotion">
             </div>
             <div class="project-info">
-              <h4>In Developing Project Exercise Tracking Project from Generation Thailand Using html css javascript
-                react nodejs express </h4>
+              <h2 class="project-title">Exernotion</h2>
+              <p>In Developing Project Exercise Tracking Project from Generation Thailand Using html css javascript
+                react nodejs express </p>
               <a href="https://github.com/enranime/jsd-jamming-assessment">View it here</a>
             </div>
           </div>
         </div>
-        <div class="swiper-scrollbar"></div>
-        <div class="swiper-pagination"></div>
       </div>
+      <div class="swiper-scrollbar"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
     </div>
   </div>
+  
   <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 

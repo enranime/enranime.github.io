@@ -25,9 +25,10 @@ const ActivityForm = () => {
             <div className="container my-5">
                 <div className="row">
                     <div className="col-md-6 py-3 pe-5">
-                        <form method="POST" action="./activity-history.html">
+                        {/* form section */}
+                        <form>
                             <div className="mb-4">
-                                <label for="form-activity" className="form-label mb-3 fw-bold">Activity Name</label>
+                                <label htmlFor="form-activity" className="form-label mb-3 fw-bold">Activity Name</label>
 
                                 <input 
                                 type="text" 
@@ -40,11 +41,11 @@ const ActivityForm = () => {
 
                             </div>
                             <div className="mb-4">
-                                <label for="form-date" className="form-label mb-3 fw-bold">Date</label>
+                                <label htmlFor="form-date" className="form-label mb-3 fw-bold">Date</label>
                                 <input type="date" className="form-control" id="form-date" required/>
                             </div>
                             <div className="mb-4">
-                                <label for="activity-type" className="form-label mb-3 fw-bold">Activity Type</label>
+                                <label htmlFor="activity-type" className="form-label mb-3 fw-bold">Activity Type</label>
 
                                 <select className="form-select" id="activity-type" required>
                                     <option value="" className="d-none">Choose Your Activity</option>
@@ -65,12 +66,12 @@ const ActivityForm = () => {
 
                                 </div>
                                 <div className="mb-4">
-                                    <label for="form-duration" className="form-label mb-3 fw-bold">Activity Duration</label>
+                                    <label htmlFor="form-duration" className="form-label mb-3 fw-bold">Activity Duration</label>
                                     <input type="number" className="form-control" id="form-duration" placeholder="Hours" required/>
                                 </div>
                                 <div className="mt-5 mb-4">
-                                    <label for="form-desc" className="form-label mb-3 fw-bold">Describe this journal</label>
-                                    <textarea maxlength="120" type="text" className="form-control" id="form-desc" rows="3" placeholder="Max 120 Characters"></textarea>
+                                    <label htmlFor="form-desc" className="form-label mb-3 fw-bold">Describe this journal</label>
+                                    <textarea maxLength={120} type="text" className="form-control" id="form-desc" rows="3" placeholder="Max 120 Characters"></textarea>
                                 </div>
                                 <div className="add-activity-btn">
                                     <button type="submit" className="btn btn-dark fw-bold py-2 border">ADD ACTIVITY</button>
@@ -81,6 +82,7 @@ const ActivityForm = () => {
                             <img  className ="img-form img-fluid d-none d-md-block img-fluid" src="./image/icon-sport/running (1).png" width="520px"  alt="placeholder"/>
                         </div>
                     </div>
+                    {/* end form section */}
                 </div>
 
 </section>

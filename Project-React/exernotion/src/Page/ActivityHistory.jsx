@@ -1,16 +1,16 @@
-import ActivityHistory from "../Component/ActivityHistory/ActivityHistory"
+import ActivityList from "../Component/ActivityList/ActivityList"
 import Footer from "../Component/Footer/Footer"
 import Navbar from "../Component/Navbar/Navbar"
 
 
 
-const ActivityList =() => {
+const ActivityHistory =() => {
     return ( <div>
         <Navbar/>
-        <ActivityHistory/>
+        <ActivityList/>
         <Footer/>
         </div>
     )
 }
 
-export default ActivityList
+export default ActivityHistory

@@ -12,11 +12,17 @@ const TableHeader = () => {
 }
 
 const TableBody = (props) => {
+    // console.log(props.characterDatas);
     const rows = props.characterDatas.map((row,index) => {
     return (
-        <tr key="{index}">
+
+        <tr key = "{index}">
             <td>{row.name}</td>
             <td>{row.job}</td>
+            <td>
+              <button onClick={() => props.removeCharacters(index)}>Delete</button>
+            </td>
+            <td>{console.log(row)}</td>
         </tr>
     )
     })
@@ -27,12 +33,12 @@ const TableBody = (props) => {
     )
 }
 const Table = (props) => {
-    const {characterData} = props
+    const {characterData, removeCharacter} = props
 
     return (
         <table>
         <TableHeader />
-        <TableBody characterDatas={characterData}/>
+        <TableBody characterDatas={characterData} removeCharacters={removeCharacter}/>
         </table>
     )
 }

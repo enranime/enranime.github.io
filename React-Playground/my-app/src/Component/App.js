@@ -21,31 +21,51 @@ const App1 =() => {
 }
 
 class App extends Component {
-  render() {
-    const characters = [
-        {
-          name: 'Charlie',
-          job: 'Janitor',
-        },
-        {
-          name: 'Mac',
-          job: 'Bouncer',
-        },
-        {
-          name: 'Dee',
-          job: 'Aspring actress',
-        },
-        {
-          name: 'Dennis',
-          job: 'Bartender',
-        },
-      ]    
 
+  state = {
+    characters: [
+      {
+
+        name: 'Charlie',
+        job: 'Janitor',
+      },
+      {
+
+        name: 'Mac',
+        job: 'Bouncer',
+      },
+      {
+
+        name: 'Dee',
+        job: 'Aspring actress',
+      },
+      {
+ 
+        name: 'Dennis',
+        job: 'Bartender',
+      },
+    ],
+  }
+
+  removeCharacter = (index) => {
+    const {characters} = this.state
+    
+    this.setState({
+      characters: characters.filter((character,i) => {
+        console.log(`the index = ${index} the i = ${i}`)
+        return i !== index
+      })
+    })
+  }
+
+
+  render() {
+    const {characters} = this.state
 
     return (
       <div className="container">
         <h1>Hello, React!</h1>
-        <Table characterData ={characters}/>
+        <Table characterData ={characters} removeCharacter={this.removeCharacter}/>
         <App1/>
       </div>
     )

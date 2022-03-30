@@ -1,6 +1,6 @@
-import './ActivityHistory.css'
+import './ActivityList.css'
 
-const ActivityHistory = () => {
+const ActivityList = () => {
     return (
         <section id="p-history">
             <div className="subheader">
@@ -101,4 +101,4 @@ const ActivityHistory = () => {
     )
 }
 
-export default ActivityHistory
+export default ActivityList

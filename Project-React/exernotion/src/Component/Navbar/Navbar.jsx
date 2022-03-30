@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, Outlet } from "react-router-dom";
 
 import './Navbar.css'
 
@@ -14,8 +15,19 @@ const Navbar = () => {
             </button>
             <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div className="navbar-nav pe-3">
-                    <a className="nav-link text-light fw-bold p-navtext" href="./index.html">Add your Activity</a>
-                    <a className="nav-link text-light fw-bold p-navtext" href="./activity-history.html">Activity History</a>
+
+                    <Link 
+                        to='/'
+                        className="nav-link text-light fw-bold p-navtext" >
+                        Add your Activity
+                    </Link>
+
+                    <Link 
+                        to='activity-history' 
+                        className="nav-link text-light fw-bold p-navtext">
+                        Activity History
+                    </Link>
+
                     <a className="nav-link text-light fw-bold p-navtext" href="#">Subscribe</a>
                     <a className="nav-link text-light fw-bold p-navtext" href="#">Sign up</a>
                 </div>

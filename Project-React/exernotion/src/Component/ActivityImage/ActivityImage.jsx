@@ -1,3 +1,5 @@
+import './ActivityImage.css'
+
 const ActivityImage = () => {
     return (
         <div className="container-fluid d-none d-md-block">

@@ -74,7 +74,7 @@ const ActivityForm = () => {
                                     <textarea maxLength={120} type="text" className="form-control" id="form-desc" rows="3" placeholder="Max 120 Characters"></textarea>
                                 </div>
                                 <div className="add-activity-btn">
-                                    <button type="submit" className="btn btn-dark fw-bold py-2 border">ADD ACTIVITY</button>
+                                    <button type="submit" className="btn btn-dark fw-bold py-2 border" >ADD ACTIVITY</button>
                                 </div>
                             </form>
                         </div>

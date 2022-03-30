@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
-
+import React from 'react';
 
 import Navbar from './Component/Navbar/Navbar';
-import Activity from './Component/Activity/Activity';
+import ActivityForm from './Component/ActivityForm/ActivityForm';
 import Footer from './Component/Footer/Footer';
 
 import './App.css';
@@ -11,7 +10,7 @@ import './App.css';
 const App = () => {
   return (<div>
       <Navbar/>
-      <Activity/>   
+      <ActivityForm/>   
       <Footer/> 
       </div>
   );

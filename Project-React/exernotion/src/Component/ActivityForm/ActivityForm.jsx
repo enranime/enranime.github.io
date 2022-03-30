@@ -1,46 +1,43 @@
-import React from "react";
+import React,{ useState } from "react";
 
-import './Activity.css'
+import './ActivityForm.css'
+import ActivityImage from "../ActivityImage/ActivityImage";
 
-const Activity = () => {
+const ActivityForm = () => {
+    const [activityName, setActivityName] = useState('');
+    const [activityDescription, setActivityDescription] =  useState('');
+
+    const onChangeActivityName = (e) => {
+        const newValue = e.target.value;
+        if(newValue.length > 10){
+            return;
+        }else{
+        setActivityName(newValue);
+        }
+    };
+
+
     return (
         <section id="p-addactivity" className="p-activity">
+
             <h2>Add your Activity</h2>
-            <div className="container-fluid d-none d-md-block">
-                <div className="row row-cols-4 row-cols-lg-6 px-3 py-3">
-                    <div className="col d-flex justify-content-center mb-3"><img className ="activity-img img-fluid" src="./image/icon-sport/running (1).png"
-                            alt="running"/></div>
-                    <div className="col d-flex justify-content-center mb-3"><img className ="activity-img img-fluid" src="./image/icon-sport/swimming (1).png"
-                            alt="running"/></div>
-                    <div className="col d-flex justify-content-center mb-3"><img className ="activity-img img-fluid" src="./image/icon-sport/basketball (1).png"
-                            alt="running"/></div>
-                    <div className="col d-flex justify-content-center mb-3"><img className ="activity-img img-fluid" src="./image/icon-sport/bike (1).png"
-                            alt="running"/> </div>
-                    <div className="col d-flex justify-content-center mb-3"><img className ="activity-img img-fluid" src="./image/icon-sport/dumbbell (1).png"
-                            alt="running"/> </div>
-                    <div className="col d-flex justify-content-center mb-3"><img className ="activity-img img-fluid" src="./image/icon-sport/ping-pong (1).png"
-                            alt="running"/> </div>
-                    <div className="col d-flex justify-content-center mb-3"><img className ="activity-img img-fluid" src="./image/icon-sport/boxing-gloves (1).png"
-                            alt="running"/> </div>
-                    <div className="col d-flex justify-content-center mb-3"><img className ="activity-img img-fluid" src="./image/icon-sport/tennis (1).png"
-                            alt="running"/> </div>
-                    <div className="col d-flex justify-content-center mb-3"><img className ="activity-img img-fluid" src="./image/icon-sport/yoga (1).png"
-                            alt="running"/> </div>
-                    <div className="col d-flex justify-content-center mb-3"><img className ="activity-img img-fluid" src="./image/icon-sport/soccer-ball (1).png"
-                            alt="running"/> </div>
-                    <div className="col d-flex justify-content-center mb-3"><img className ="activity-img img-fluid" src="./image/icon-sport/golf (1).png"
-                            alt="running"/> </div>
-                    <div className="col d-flex justify-content-center mb-3"><img className ="activity-img img-fluid" src="./image/icon-sport/other.png"
-                            alt="running"/> </div>
-                </div>
-            </div>
+            <ActivityImage/>
             <div className="container my-5">
                 <div className="row">
                     <div className="col-md-6 py-3 pe-5">
                         <form method="POST" action="./activity-history.html">
                             <div className="mb-4">
                                 <label for="form-activity" className="form-label mb-3 fw-bold">Activity Name</label>
-                                <input type="text" className="form-control" id="form-activity" placeholder="Your Activity Name" required/>
+
+                                <input 
+                                type="text" 
+                                className="form-control" 
+                                id="form-activity" 
+                                placeholder="Your Activity Name"
+                                value={activityName}
+                                onChange={onChangeActivityName}
+                                 required/>
+
                             </div>
                             <div className="mb-4">
                                 <label for="form-date" className="form-label mb-3 fw-bold">Date</label>
@@ -64,7 +61,6 @@ const Activity = () => {
                                     <option value="11">golf</option>
                                     <option value="12">other</option>
                                 </select>
-
 
 
                                 </div>
@@ -92,4 +88,4 @@ const Activity = () => {
 };
 
 
-export default Activity;
+export default ActivityForm;
